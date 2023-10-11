@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		24D9C8202295A4D20051F823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9C81F2295A4D20051F823 /* AppDelegate.swift */; };
-		24D9C8222295A4D20051F823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9C8212295A4D20051F823 /* ViewController.swift */; };
+		24D9C8222295A4D20051F823 /* IOSTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9C8212295A4D20051F823 /* IOSTeamVC.swift */; };
 		24D9C8252295A4D20051F823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D9C8232295A4D20051F823 /* Main.storyboard */; };
 		24D9C8272295A4D60051F823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D9C8262295A4D60051F823 /* Assets.xcassets */; };
 		24D9C82A2295A4D60051F823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D9C8282295A4D60051F823 /* LaunchScreen.storyboard */; };
 		24D9C8332295A5B40051F823 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9C8312295A5B30051F823 /* Person.swift */; };
-		24D9C8342295A5B40051F823 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9C8322295A5B40051F823 /* DBHelper.swift */; };
+		24D9C8342295A5B40051F823 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D9C8322295A5B40051F823 /* DBManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24D9C81C2295A4D20051F823 /* DBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D9C81F2295A4D20051F823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24D9C8212295A4D20051F823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24D9C8212295A4D20051F823 /* IOSTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSTeamVC.swift; sourceTree = "<group>"; };
 		24D9C8242295A4D20051F823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24D9C8262295A4D60051F823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D9C8292295A4D60051F823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24D9C82B2295A4D60051F823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24D9C8312295A5B30051F823 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		24D9C8322295A5B40051F823 /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		24D9C8322295A5B40051F823 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				24D9C81F2295A4D20051F823 /* AppDelegate.swift */,
-				24D9C8212295A4D20051F823 /* ViewController.swift */,
-				24D9C8322295A5B40051F823 /* DBHelper.swift */,
+				24D9C8212295A4D20051F823 /* IOSTeamVC.swift */,
+				24D9C8322295A5B40051F823 /* DBManager.swift */,
 				24D9C8312295A5B30051F823 /* Person.swift */,
 				24D9C8232295A4D20051F823 /* Main.storyboard */,
 				24D9C8262295A4D60051F823 /* Assets.xcassets */,
@@ -142,9 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D9C8332295A5B40051F823 /* Person.swift in Sources */,
-				24D9C8222295A4D20051F823 /* ViewController.swift in Sources */,
+				24D9C8222295A4D20051F823 /* IOSTeamVC.swift in Sources */,
 				24D9C8202295A4D20051F823 /* AppDelegate.swift in Sources */,
-				24D9C8342295A5B40051F823 /* DBHelper.swift in Sources */,
+				24D9C8342295A5B40051F823 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,12 +1,8 @@
-
-
 import Foundation
 import SQLite3
 
-class DBHelper
-{
-    init()
-    {
+class DBManager{
+    init(){
         db = openDatabase()
         createTable()
     }
@@ -14,8 +10,7 @@ class DBHelper
     let dbPath: String = "myDb.sqlite"
     var db:OpaquePointer?
 
-    func openDatabase() -> OpaquePointer?
-    {
+    func openDatabase() -> OpaquePointer? {
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent(dbPath)
         print(fileURL)
@@ -50,8 +45,7 @@ class DBHelper
     }
     
     
-    func insert(name:String, exp:String)
-    {
+    func insert(name:String, exp:String) {
         let insertStatementString = "INSERT INTO person (Id, name, exp) VALUES (NULL, ?, ?);"
         var insertStatement: OpaquePointer? = nil
         if sqlite3_prepare_v2(db, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK {
@@ -104,5 +98,4 @@ class DBHelper
         }
         sqlite3_finalize(deleteStatement)
     }
-    
 }
