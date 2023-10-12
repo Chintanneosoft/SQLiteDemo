@@ -83,6 +83,26 @@ class DBManager{
         return psns
     }
     
+    func updateByID(id: Int, name: String, exp: String) {
+        let updateStatementString = "UPDATE person SET name = ?, exp = ? WHERE id = ?;"
+        var updateStatement: OpaquePointer? = nil
+
+        if sqlite3_prepare_v2(db, updateStatementString, -1, &updateStatement, nil) == SQLITE_OK {
+            sqlite3_bind_text(updateStatement, 1,(name as NSString).utf8String, -1, nil)
+            sqlite3_bind_text(updateStatement, 2,(exp as NSString).utf8String, -1, nil)
+            sqlite3_bind_int(updateStatement, 3, Int32(id))
+
+            if sqlite3_step(updateStatement) == SQLITE_DONE {
+                print("Successfully updated row.")
+            } else {
+                print("Could not update row.")
+            }
+        } else {
+            print("UPDATE statement could not be prepared")
+        }
+        sqlite3_finalize(updateStatement)
+    }
+
     func deleteByID(id:Int) {
         let deleteStatementString = "DELETE FROM person WHERE Id = ?;"
         var deleteStatement: OpaquePointer? = nil
